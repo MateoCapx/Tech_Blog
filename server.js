@@ -33,7 +33,12 @@ app.use(express.json({limit: "50mb"}));
 app.use(express.urlencoded({extended: true, limit: "50mb"}));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use(routes);
+app.use(function (req, res, next) {
+    routes
+    next();
+ });
+ 
+// app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Server is running on port ${PORT}.`));
