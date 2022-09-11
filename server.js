@@ -11,8 +11,9 @@ const helpers = require("./utils/helpers");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Creating Seesion connection
 const sess = {
-  secret: "Super secret secret",
+   secret: "Super secret secret", //use to sign the id cookie 
   cookie: {},
   resave: false,
   saveUninitialized: true,
@@ -20,10 +21,9 @@ const sess = {
     db: sequelize,
   }),
 };
-
-
 app.use(session(sess));
 
+// Creating Handelbars connection 
 const hbs = exphbs.create({ helpers });
 
 app.engine("handlebars", hbs.engine);
