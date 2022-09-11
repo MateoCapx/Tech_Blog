@@ -16,7 +16,7 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/dashboard') 
       } else {
         alert(response.statusText);
       }
@@ -46,7 +46,8 @@ async function loginFormHandler(event) {
       if (response.ok) {
             // replace() removes the current URL from the document history.
             // With replace() it is not possible to use "back" to navigate back to the original document.
-        document.location.replace('/');
+            //Replace('/dashboard') redirects user to dahsboard
+            document.location.replace('/dashboard') 
       } else {
         alert(response.statusText);
       }
