@@ -8,14 +8,15 @@
     margin: 0;
     font-family: sans-serif;
     color: #333;
-     
+  
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #bc6c25;
     font-weight: bold;
     transition: color .1s;
+   
   }
   
   a:hover {
@@ -33,6 +34,10 @@
     border-radius: 5px;
   }
   
+  #logout{
+    color: #bc6c25;
+  }
+
   button:hover {
     background-color: #3486eb;
   }
@@ -40,6 +45,20 @@
   .post-list {
     margin: 0;
     padding: 0;
+  }
+  
+  .post-list li {
+    border: 1px solid black;
+    padding:20px 0px 10px 28px;
+    border-radius: 5px;
+    border-radius: 25px;
+  }
+
+  .post-list .title {
+    
+   font-size: 23px;
+   border-bottom: 1px solid black;
+  margin-bottom: 5px;
   }
   
   textarea, input {
@@ -81,6 +100,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    background-color: #faedcd;
+    padding-bottom: 20px;
+    font-size: 20px;
   }
   
   header h1 {
@@ -90,6 +112,7 @@
   main {
     flex: 1;
     padding: 2% 4%;
+    background-color: #e9edc9;
   }
   
   .btn-no-style {
