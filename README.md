@@ -100,6 +100,12 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 
 User can only upvote one per post.
+
+
 User can't upvote on their own post
+
+
 user can't comment on their own post
+
+
 user can't upvote on their own post
